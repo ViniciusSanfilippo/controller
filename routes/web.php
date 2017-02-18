@@ -20,4 +20,8 @@ Route::get('/editoras', 'EditoraController@index');
 
 Route::get('/editoras/cria', 'EditoraController@cria');
 
+Route::get('/editoras/edita/{editora}','EditoraController@edita');//noa precisa do find no COntroller
+
 Route::post('/editoras', 'EditoraController@armazena');
+
+Route::patch('/editoras/{id}','EditoraController@atualiza');
